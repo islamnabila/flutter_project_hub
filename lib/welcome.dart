@@ -7,11 +7,7 @@ class WellcomePage extends StatelessWidget{
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(
-        backgroundColor: Colors.pink.shade300,
-        elevation: 0,
-      ),
-
+      backgroundColor: Colors.white,
       body: SafeArea(
         child: Column(
           children: [

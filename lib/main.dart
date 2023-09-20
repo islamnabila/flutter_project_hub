@@ -1,5 +1,6 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter/services.dart';
 import 'package:flutter_project_hub/login.dart';
 import 'package:flutter_project_hub/registerGurdian.dart';
 import 'package:flutter_project_hub/registerSchool.dart';
@@ -12,6 +13,9 @@ import 'package:flutter_project_hub/welcome.dart';
 import 'exercise.dart';
 
 void main(){
+  SystemChrome.setSystemUIOverlayStyle(SystemUiOverlayStyle(
+    statusBarColor: Colors.white, // status bar color
+  ));
   runApp(MyApp());
 }
 

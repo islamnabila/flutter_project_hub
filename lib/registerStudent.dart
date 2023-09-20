@@ -29,10 +29,22 @@ class RegisterPage extends StatelessWidget{
                       decoration: InputDecoration(
                         filled: true,
                         fillColor: Colors.grey.shade300,
+
+                        focusedBorder: OutlineInputBorder(
+                            borderRadius: BorderRadius.circular(25),
+                            borderSide: BorderSide(color: Colors.blue, width: 1)),
                         border: OutlineInputBorder(
-                          borderRadius: BorderRadius.circular(30)
-                        )
-                       
+                        borderRadius: BorderRadius.circular(25),  ),
+                        enabledBorder: OutlineInputBorder(
+                        borderRadius: BorderRadius.circular(25),
+                        borderSide: BorderSide(color: Colors.white, width: 1)),
+                        disabledBorder: OutlineInputBorder(
+                        borderRadius: BorderRadius.circular(25),
+                        borderSide: BorderSide(color: Colors.grey, width: 1)),
+
+
+
+
                       ),
 
                     ),
@@ -292,7 +304,7 @@ class RegisterPage extends StatelessWidget{
                   ),
                   SizedBox(height: 20,),
                   Container(
-                    margin: EdgeInsets.only(left: 7),
+                    margin: EdgeInsets.only(left: 70),
                       child: SizedBox(
                         height: 45,
                         width: 170,
